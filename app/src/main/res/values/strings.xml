@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bookadvisor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="buttonAgain">Try again</string>
+    <string name="buttonStart">Start here</string>
+    <string name="buttonFind">Find books</string>
+    <string name="buttonBack">Go back</string>
+</resources>
