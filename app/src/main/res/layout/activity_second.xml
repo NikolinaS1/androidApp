@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/selectGenre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="19dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="286dp"
         android:text="Select a genre."
-        android:textColor="@color/brown"
+        android:textColor="@color/dblue"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +29,8 @@
         android:layout_marginEnd="286dp"
         android:layout_marginBottom="36dp"
         android:text="@string/buttonBack"
-        android:textColor="@color/brown"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -40,8 +42,9 @@
         android:layout_marginStart="133dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="36dp"
+        android:background="@drawable/custom_button"
         android:text="@string/buttonFind"
-        android:textColor="@color/brown"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonBack" />
@@ -53,66 +56,66 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="149dp"
+        android:checkedButton="@+id/romance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectGenre"
-        android:checkedButton="@+id/romance">
+        app:layout_constraintTop_toBottomOf="@+id/selectGenre">
 
         <RadioButton
             android:id="@+id/romance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Romance"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="History"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/poetry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Poetry"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/fiction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fiction"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/thriller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Thriller"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/drama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Drama"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/fantasy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fantasy"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/crime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Crime"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
     </RadioGroup>
 
@@ -124,7 +127,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="334dp"
         android:text="Sort by:"
-        android:textColor="@color/brown"
+        android:textColor="@color/dblue"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -136,24 +140,24 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="203dp"
+        android:checkedButton="@+id/relevance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sort"
-        android:checkedButton="@+id/relevance">
+        app:layout_constraintTop_toBottomOf="@+id/sort">
 
         <RadioButton
             android:id="@+id/relevance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Relevance"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
 
         <RadioButton
             android:id="@+id/newest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Newest"
-            android:textColor="@color/brown" />
+            android:textColor="@color/dblue" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
